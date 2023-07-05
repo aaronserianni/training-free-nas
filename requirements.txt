@@ -1,0 +1,10 @@
+torch>=1.12
+tensorflow>=2.9.1
+notebook
+ipywidgets
+transformers
+datasets
+seaborn
+matplotlib
+scikit-learn
+scipy

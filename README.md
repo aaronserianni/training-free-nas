@@ -7,4 +7,26 @@ Neural architecture search (NAS) has allowed for the automatic creation of new a
 
 # Code
 
-To be released before the ACL 2023 conference.
+All dataset files and training-free metric results are in [`data/`](data/). The NAS-Bench-BERT benchmark is described in [`data/BERT_benchmark.json`](data/BERT_benchmark.json).
+
+Required packages are listed in [`requirements.txt`](requirements.txt), and can be installed with `pip install -r requirements.txt`. The Docker file used to define the MacOS container in which code was run is also included. 
+
+Run [`BERT_metrics.ipyb`](BERT_metrics.ipynb) and [`RNN_metrics.ipyb`](BERT_metrics.ipynb) to reproduce results, and [`BERT_stats.ipyb`](BERT_stats.ipynb) and [`RNN_stats.ipyb`](RNN_stats.ipynb) to create figures.
+
+[`nas_runner.ipynb`](nas_runner.ipynb) reproduces the NAS-Bench-BERT benchmark, and requires usage of Google Colab and Google Cloud Storage for TPU training of transformers. [`space_maker.ipynb`](space_maker.ipynb) generates the config file that defines NAS-Bench-BERT.
+
+
+# Citation
+If you use our code for your paper or work, please cite:
+
+```bibtex
+@misc{serianni2023trainingfree,
+      title={Training-free Neural Architecture Search for RNNs and Transformers}, 
+      author={Aaron Serianni and Jugal Kalita},
+      year={2023},
+      eprint={2306.00288},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
+Proceedings citation in ACL Anthology will added later.

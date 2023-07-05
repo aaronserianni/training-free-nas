@@ -1,0 +1,32 @@
+{
+    "id": 0,
+    "is_running": false,
+    "completed": false,
+    "time_to_train": 0, 
+    "scores": {
+        "cola": 0,
+        "mnli": 0,
+        "mrpc": 0,
+        "qnli": 0,
+        "qqp": 0,
+        "rte": 0,
+        "sst": 0,
+        "sts": 0,
+        "glue": 0
+    }, 
+    "hparams": {
+        "use_tpu": true,
+        "num_tpu_cores": 8,
+        "tpu_name": "grpc://",
+        "learning_rate": 0.0005,
+        "eval_batch_size": 128,
+        "train_batch_size": 128,
+        "num_train_steps": 100000,
+        "model_hparam_overrides": {
+            "hidden_size": 128,
+            "nas_config": {
+                "encoder_layers": []
+            }
+        }
+    }
+}
